@@ -3,9 +3,64 @@
   <head>
     <meta charset="en_GB" />
     <title>LCC Jiu Jitsu</title>
+    <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Heebo');
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        font: normal normal 160% /1.8 'Heebo', sans-serif;
+      }
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+      p + p {
+        margin-top: 1em;
+      }
+      .site-wrapper {
+      }
+      .site-header {
+        display: flex;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        height: 40rem;
+        background: url('./static/images/background.jpg') center center / cover no-repeat;
+        filter: grayscale(100%);
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+      .site-title {
+        color: white;
+        font-size: 4em;
+        text-shadow: 0 0 2rem rgba(0,0,0,.5);
+      }
+      .site-content {
+        max-width: 60rem;
+        width: auto;
+        margin: auto;
+        padding: 2rem;
+        font-size: 2em;
+      }
+    </style>
   </head>
   <body>
-    <h1>LCC Jiu Jitsu</h1>
-    <p>Coming soon!</p>
+    <main class="site-wrapper">
+      <header class="site-header">
+
+        <h1 class="site-title">LCC Jiu Jitsu</h1>
+      </header>
+      <div class="site-content">
+        <p>We are part of Aiuchi Jiu Jitsu and practise throwing, locks, ground fighting
+          and self defence techniques every Tuesday 6-8pm Room T307, LCC London College of Communication.</p>
+        <p>Welcome to all! FREE!</p>
+        <p>Find us on <a href="https://www.instagram.com/lccjiujitsu/">Instagram</a> and <a href="https://www.facebook.com/LCC.Aiuchi/">Facebook</a></p>
+      </div>
+    </main>
   </body>
 </html>
