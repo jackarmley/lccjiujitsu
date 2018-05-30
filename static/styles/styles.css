@@ -16,7 +16,7 @@
 }
 html {
   font-size: 62.5%;
-  background: url('../images/background.jpg') center center / cover no-repeat fixed;
+  background: url('../images/background.jpg') center center / cover no-repeat;
 
 }
 body {
@@ -48,12 +48,6 @@ a {
   margin-left: 1rem;
   cursor: pointer;
   transition: all .5s ease;
-}
-@media (pointer: fine) {
-  .sociallogo:hover {
-    transform: translateY(-.2rem);
-    background-color: var(--key-color-dark);
-  }
 }
 .sociallogo[data-icon="fb"]{
   background-image: url('../images/flogo-HexRBG-Wht-58.svg');
@@ -119,6 +113,15 @@ a {
   margin: auto;
   padding: 4rem 2rem;
   text-align: center;
+}
+@media (pointer: fine) {
+  html {
+    background-attachment: fixed;
+  }
+  .sociallogo:hover {
+    transform: translateY(-.2rem);
+    background-color: var(--key-color-dark);
+  }
 }
 @media screen and (min-width: 31em) {
   .gallery {
