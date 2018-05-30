@@ -4,62 +4,7 @@
     <meta charset="en_GB" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>LCC Jiu Jitsu</title>
-    <style media="screen">
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      html {
-        font-size: 62.5%;
-      }
-      body {
-        font: normal normal 130% /1.8 'Open Sans', sans-serif;
-      }
-      img {
-        width: 100%;
-        max-width: 100%;
-      }
-      p + p {
-        margin-top: 1em;
-      }
-      a {
-        color: #ed2024;
-      }
-      .site-wrapper {
-      }
-      .site-header {
-        display: flex;
-        margin-bottom: 2rem;
-        padding: 2rem;
-        min-height: 80vh;
-        background: url('./static/images/background.jpg') center center / cover no-repeat fixed;
-        align-items: center;
-        justify-content: center;
-      }
-      .site-logo {
-        background: url('./static/images/logo.svg') center center / contain no-repeat;
-        width: 20rem;
-        height: 20rem;
-        text-indent: 110%;
-        white-space: nowrap;
-        overflow: hidden;
-      }
-      .site-content {
-        max-width: 60rem;
-        width: auto;
-        margin: auto;
-        padding: 2rem;
-        font-size: 2em;
-      }
-      @media screen and (min-width: 31em) {
-        .site-logo {
-          width: 30rem;
-          height: 30rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./static/styles/styles.css" />
   </head>
   <body>
     <main class="site-wrapper">
@@ -68,11 +13,32 @@
         <h1 class="site-logo">LCC Jiu Jitsu</h1>
       </header>
       <div class="site-content">
-        <p>We are part of Aiuchi Jiu Jitsu and practise throwing, locks, ground fighting
-          and self defence techniques every Tuesday 6-8pm Room T304, LCC London College of Communication.</p>
-        <p>Welcome to all! FREE!</p>
-        <p>Find us on <a href="https://www.instagram.com/lccjiujitsu/">Instagram</a> and <a href="https://www.facebook.com/LCC.Aiuchi/">Facebook</a></p>
+        <div class="site-content-inner">
+          <p>We are part of Aiuchi Jiu Jitsu and practise throwing, locks, ground fighting
+            and self defence techniques
+            <p>We train every Tuesday from 6-8pm in Room T304, LCC London College of Communication.</p>
+            <p>Everybody is welcome. It's fun, friendly and free!</p>
+          <ul class="gallery">
+            <li class="gallery-image">
+              <img src="./static/images/gallery/32121841_1662873613765747_8157659933387522048_n.jpg" alt="Gregor and Andy displaying their red belts at their first grading" />
+            </li>
+            <li class="gallery-image">
+              <img src="./static/images/gallery/29089520_430544917387036_2275501341600120832_n.jpg" alt="Gregor practicing kicks to a pad with Sense Graham" />
+            </li>
+            <li class="gallery-image">
+              <img src="./static/images/gallery/29089243_158887788106593_1417521623530995712_n.jpg" alt="Kim throwing Joe Seo Toshi" />
+            </li>
+            <li class="gallery-image">
+              <img src="./static/images/gallery/28766019_285791688620715_767026200664080384_n.jpg" alt="Joe groundfighting, doing an armlock on Sensei Graham" />
+            </li>
+          </ul>
+        </div>
       </div>
+      <footer class="site-footer">
+        <div class="site-footer-inner">
+          <p>Get social with us! <a class="sociallogo" data-icon="ig" href="https://www.instagram.com/lccjiujitsu/">Instagram</a><a class="sociallogo" data-icon="fb" href="https://www.facebook.com/LCC.Aiuchi/">Facebook</a></p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
