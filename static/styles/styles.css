@@ -16,8 +16,6 @@
 }
 html {
   font-size: 62.5%;
-  background: url('../images/background.jpg') center center / cover no-repeat;
-
 }
 body {
   font: normal normal 160% /1.8 'Open Sans', sans-serif;
@@ -73,6 +71,7 @@ a {
   min-height: 80vh;
   align-items: center;
   justify-content: center;
+  background: url('../images/background.jpg') center center / cover no-repeat;
 }
 .site-logo {
   background: url('../images/logo.svg') center center / contain no-repeat;
@@ -106,6 +105,7 @@ a {
 }
 .site-footer {
   color: white;
+  background: url('../images/background.jpg') bottom center / cover no-repeat;
 }
 .site-footer-inner {
   max-width: 60rem;
@@ -115,20 +115,26 @@ a {
   text-align: center;
 }
 @media (pointer: fine) {
-  html {
-    background-attachment: fixed;
-  }
   .sociallogo:hover {
     transform: translateY(-.2rem);
     background-color: var(--key-color-dark);
   }
 }
 @media screen and (min-width: 31em) {
+  body {
+    background: url('../images/background-large.jpg') center center / cover no-repeat fixed;
+  }
   .gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .site-header {
+    background-image: none;
   }
   .site-logo {
      width: 30rem;
      height: 30rem;
+  }
+  .site-footer {
+    background-image: none;
   }
 }
