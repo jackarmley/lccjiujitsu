@@ -1,0 +1,174 @@
+/**
+ * Styles for the LCC Jiu Jitsu site
+ * @author Jack Armley
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+  --key-color: #ed2024;
+  --key-color-dark: #c12126;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font: normal normal 160% /1.8 'Open Sans', sans-serif;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+p + p {
+  margin-top: 1em;
+}
+a {
+  color: var(--key-color);
+}
+.sociallogo {
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  vertical-align: middle;
+  background: var(--key-color);
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100%;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.sociallogo[data-icon="fb"]{
+  background-image: url('../images/flogo-HexRBG-Wht-58.svg');
+}
+.sociallogo[data-icon="ig"]{
+  background-image: url('../images/instagram-glyph-logo.svg');
+}
+.gallery {
+  display: grid;
+  margin-top: 2em;
+  grid-gap: 2rem;
+  list-style: none;
+}
+.gallery-image {
+  filter: grayscale(100%);
+}
+.site-wrapper {
+}
+.site-header {
+  position: relative;
+  display: flex;
+  margin-bottom: 2rem;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url('../images/background.jpg') center center / cover no-repeat;
+}
+.site-logo {
+  background: url('../images/logo.svg') center center / contain no-repeat;
+  width: 20rem;
+  height: 20rem;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.scroll-prompt {
+  position: absolute;
+  bottom: 8rem;
+  left: calc(50% - 1rem);
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  animation: bounce 1s infinite;
+}
+.scroll-prompt::after {
+    content:' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top: .5rem solid var(--key-color);
+    border-right: .5rem solid var(--key-color);
+    transform: rotateZ(135deg);
+}
+.site-content {
+  background: white;
+}
+.site-content-inner {
+  max-width: 60rem;
+  width: auto;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+.site-content-inner > p:first-child {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+.site-content-inner > p:first-child::after {
+  content:' ';
+  background: var(--key-color);
+  display: block;
+  margin: 4rem auto;
+  width: 4rem;
+  height: .2rem;
+}
+.site-footer {
+  color: white;
+  background: url('../images/background.jpg') bottom center / cover no-repeat;
+}
+.site-footer-inner {
+  max-width: 60rem;
+  width: auto;
+  margin: auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+@media (pointer: fine) {
+  .sociallogo:hover {
+    transform: translateY(-.2rem);
+    background-color: var(--key-color-dark);
+  }
+}
+@media screen and (min-width: 31em) {
+  body {
+    background: url('../images/background-large.jpg') center center / cover no-repeat fixed;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .scroll-prompt {
+    width: 4rem;
+    height: 4rem;
+    left: calc(50% - 2rem);
+  }
+  .site-header {
+    background-image: none;
+  }
+  .site-logo {
+     width: 30rem;
+     height: 30rem;
+  }
+  .site-footer {
+    background-image: none;
+  }
+}
