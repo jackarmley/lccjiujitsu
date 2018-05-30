@@ -67,8 +67,7 @@ a {
 .site-header {
   display: flex;
   margin-bottom: 2rem;
-  padding: 2rem;
-  min-height: 80vh;
+  padding: 6rem 2rem;
   align-items: center;
   justify-content: center;
   background: url('../images/background.jpg') center center / cover no-repeat;
@@ -128,7 +127,10 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
   .site-header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-image: none;
+    min-height: 80vh;
   }
   .site-logo {
      width: 30rem;
