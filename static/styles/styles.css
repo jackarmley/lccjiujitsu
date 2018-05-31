@@ -3,12 +3,23 @@
  * @author Jack Armley
  */
 
+/**
+ * Import any Google Fonts needed
+ */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+/**
+ * Define CSS variables
+ */
 :root {
-  --key-color: #ed2024;
-  --key-color-dark: #c12126;
+  --color-key: #ed2024;
+  --color-key-dark: #c12126;
+  --typeface-base: 'Open Sans';
 }
+
+/**
+ * Set normalize styles
+ */
 
 * {
   margin: 0;
@@ -17,8 +28,12 @@
 html {
   font-size: 62.5%;
 }
+
+/**
+ * Set base element styles
+ */
 body {
-  font: normal normal 160% /1.8 'Open Sans', sans-serif;
+  font: normal normal 160% /1.8 var(--typeface-base), sans-serif;
 }
 img {
   width: 100%;
@@ -28,14 +43,18 @@ p + p {
   margin-top: 1em;
 }
 a {
-  color: var(--key-color);
+  color: var(--color-key);
 }
+
+/**
+ * Define reusable elements
+ */
 .sociallogo {
   width: 2em;
   height: 2em;
   display: inline-block;
   vertical-align: middle;
-  background: var(--key-color);
+  background: var(--color-key);
   overflow: hidden;
   text-indent: 110%;
   white-space: nowrap;
@@ -62,6 +81,10 @@ a {
 .gallery-image {
   filter: grayscale(100%);
 }
+
+/**
+ * Define layout styles
+ */
 .site-wrapper {
 }
 .site-header {
@@ -106,8 +129,8 @@ a {
     display: block;
     width: 100%;
     height: 100%;
-    border-top: .5rem solid var(--key-color);
-    border-right: .5rem solid var(--key-color);
+    border-top: .5rem solid var(--color-key);
+    border-right: .5rem solid var(--color-key);
     transform: rotateZ(135deg);
 }
 .site-content {
@@ -126,7 +149,7 @@ a {
 }
 .site-content-inner > p:first-child::after {
   content:' ';
-  background: var(--key-color);
+  background: var(--color-key);
   display: block;
   margin: 4rem auto;
   width: 4rem;
@@ -143,10 +166,14 @@ a {
   padding: 4rem 2rem;
   text-align: center;
 }
+
+/**
+ * Define media-specific styles
+ */
 @media (pointer: fine) {
   .sociallogo:hover {
     transform: translateY(-.2rem);
-    background-color: var(--key-color-dark);
+    background-color: var(--color-key-dark);
   }
 }
 @media screen and (min-width: 31em) {
