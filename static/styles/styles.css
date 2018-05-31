@@ -95,7 +95,7 @@ a {
 .scroll-prompt {
   position: absolute;
   bottom: 8rem;
-  left: calc(50% - 2rem);
+  left: calc(50% - 1rem);
   display: block;
   width: 2rem;
   height: 2rem;
@@ -159,6 +159,7 @@ a {
   .scroll-prompt {
     width: 4rem;
     height: 4rem;
+    left: calc(50% - 2rem);
   }
   .site-header {
     background-image: none;
