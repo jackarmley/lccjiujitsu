@@ -33,6 +33,7 @@ html {
  * Set base element styles
  */
 body {
+  background-color: black;
   font: normal normal 160% /1.8 var(--typeface-base), sans-serif;
 }
 img {
