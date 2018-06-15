@@ -33,7 +33,6 @@ html {
  * Set base element styles
  */
 body {
-  background-color: black;
   font: normal normal 160% /1.8 var(--typeface-base), sans-serif;
 }
 img {
@@ -179,7 +178,7 @@ a {
 }
 @media screen and (min-width: 31em) {
   body {
-    background: url('../images/background-large.jpg') center center / cover no-repeat fixed;
+    background: url('../images/background-large.jpg') center center / cover no-repeat fixed black;
   }
   .gallery {
     grid-template-columns: repeat(2, 1fr);
