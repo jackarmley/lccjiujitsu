@@ -1,0 +1,98 @@
+{
+    "O soto waza": {
+        "en" : "major outer technique",
+        "grade": "red"
+    },
+    "Ko soto waza": {
+        "en": "minor outer technique",
+        "grade": "red"
+    },
+    "O uchi waza": {
+        "en": "major inner technique",
+        "grade": "red"
+    },
+    "O soto gari": {
+        "en": "major outer reap",
+        "grade": "yellow"
+    },
+    "Ko soto gake": {
+        "en": "major outer hook",
+        "grade": "yellow"
+    },
+    "O tsuri goshi": {
+        "en": "major lifting hip",
+        "grade": "yellow"
+    },
+    "Ko tsuri goshi": {
+        "en": "minor lifting hip",
+        "grade": "yellow"
+    },
+    "Koshi guruma": {
+        "en": "hip wheel",
+        "grade": "yellow"
+    },
+    "O goshi": {
+        "en": "major hip",
+        "grade": "yellow"
+    },
+    "O uchi gari": {
+        "en": "major inner reap",
+        "grade": "orange"
+    },
+    "Ippon seoi nage": {
+        "en": "one point shoulder throw",
+        "grade": "orange"
+    },
+    "Seoi otoshi": {
+        "en": "shoulder drop",
+        "grade": "orange"
+    },
+    "Tai otoshi": {
+        "en": "body drop",
+        "grade": "orange"
+    },
+    "Ko uchi gari": {
+        "en": "minor inner reap",
+        "grade": "orange"
+    },
+    "O soto otoshi": {
+        "en": "major outer drop",
+        "grade": "orange"
+    },
+    "Uki goshi": {
+        "en": "floating hip",
+        "grade": "green"
+    },
+    "Harai goshi": {
+        "en": "sweeping hip",
+        "grade": "green"
+    },
+    "Hane goshi": {
+        "en": "springing hip",
+        "grade": "green"
+    },
+    "Kitomo seoi nage": {
+        "en": "jacket shoulder throw",
+        "grade": "green"
+    },
+    "Tsuri komi goshi": {
+        "en": "lifting pulling hip",
+        "grade": "green"
+    },
+    "Sode tsuri komi goshi": {
+        "en": "sleeve lifting pulling hip",
+        "grade": "green"
+    },
+    "Ashi garuma": {
+        "en": "ankle wheel",
+        "grade": "green"
+    },
+    "O garuma": {
+        "en": "major wheel",
+        "grade": "green"
+    },
+    "O soto garuma": {
+        "en": "major outer wheel",
+        "grade": "green"
+    }
+}

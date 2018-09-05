@@ -1,0 +1,107 @@
+/**
+* Styles
+* @author: Jack Armley
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Arvo|Carrois+Gothic+SC');
+
+:root {
+    --grade-red: #e10707;
+    --grade-yellow: #ffd21f;
+    --grade-orange: #ff8b1a;
+    --grade-green: #4bb716;
+    --font-body: 'Arvo', serif;
+    --font-header: 'Carrois Gothic SC', sans-serif;
+    --background-color: #ccc;
+    --card-cover-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: var(--background-color);
+    font-size: 62.5%;
+}
+
+body {
+    font: normal normal 160%/1.5 var(--font-body);
+    padding: 2rem;
+}
+
+.technique-card-app-header {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.technique-card-app-header h1 {
+    margin-bottom: 1rem;
+}
+
+.technique-card-container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.technique-card {
+    text-align: center;
+    perspective: 50rem;
+    cursor: pointer;
+}
+
+.technique-card-content {
+    display: grid;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+}
+
+.technique-card-front,
+.technique-card-back {
+    backface-visibility: hidden;
+    border-radius: .5rem;
+    padding: 1rem;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    min-height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technique-card-front {
+    background: var(--card-cover-color);
+}
+
+.technique-card-back {
+    transform: rotateY( 180deg );
+}
+
+.technique-card-header {
+    font-family: var(--font-header);
+    font-size: 1.2em; 
+    text-transform: lowercase; 
+}
+
+.technique-card-subtext {
+    font-size: .9em;
+}
+
+.technique-card:hover .technique-card-content {
+    transform: rotateY( 180deg ) ;
+}
+
+.technique-card.grade--red .technique-card-back {
+    background: var(--grade-red);
+}
+.technique-card.grade--yellow .technique-card-back {
+    background: var(--grade-yellow);
+}
+.technique-card.grade--orange .technique-card-back {
+    background: var(--grade-orange);
+}
+.technique-card.grade--green .technique-card-back {
+    background: var(--grade-green);
+}
