@@ -8,18 +8,29 @@
     <link rel="stylesheet" href="./static/styles/styles.css" />
   </head>
   <body>
-    <main class="site-wrapper">
+    <div class="site-wrapper">
       <header class="site-header">
-        <h1 class="site-logo">LCC Jiu Jitsu</h1>
-        <span class="scroll-prompt"></span>
+        <div class="site-maxwidth-wrapper">
+          <a class="site-logo" href="/">LCC Jiu Jitsu</a>
+          <nav class="site-nav">
+            <ul class="site-nav-items">
+              <li class="site-nav-item">
+                <a class="site-nav-item-link" href="/">Home</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="site-nav-item-link" href="/about.html">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <div class="site-content">
-        <div class="site-content-inner">
-          <p>We are part of Aiuchi Jiu Jitsu and practise throwing, locks, ground fighting
-            and self defence techniques
+      <div class="site-maxwidth-wrapper">
+        <main class="site-content">
+          <p class="hero-text">We are part of Aiuchi Jiu Jitsu and practise throwing, locks, ground fighting
+            and self defence techniques.
           <p>We train every Thursday from 6-8pm in Room T304 at the London College of Communication (LCC).</p>
-          <p>Everybody is welcome. It's fun, friendly and free!</p>
-          <p>Feel free to message us on <a href="https://www.facebook.com/LCC.Aiuchi">our facebook page</a> for more info. We're always happy to chat and to help you find our dojo :)</p>
+          <p>Everybody is welcome. It's fun, friendly and only £3 a session! (First session <strong>Free)</strong></p>
+          <p>Chat with us on <a href="http://m.me/LCC.Aiuchi">Facebook Messenger</a> for more info. We're always happy to answer any questions and to help you find our dojo :)</p>
           <ul class="gallery">
             <li class="gallery-image">
               <img
@@ -46,7 +57,7 @@
               />
             </li>
           </ul>
-        </div>
+        </main>
       </div>
       <footer class="site-footer">
         <div class="site-footer-inner">
@@ -57,7 +68,7 @@
           </p>
         </div>
       </footer>
-    </main>
+    </div>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120158984-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
