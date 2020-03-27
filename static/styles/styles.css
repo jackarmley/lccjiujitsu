@@ -199,3 +199,16 @@ a {
     background-image: none;
   }
 }
+
+/**
+* Covid message
+**/
+.covid-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2rem);
+  background: var(--color-key-dark);
+  color: white;
+  padding: 1rem;
+}
